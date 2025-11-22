@@ -13,8 +13,13 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       title:'My App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue
+      ),
+      debugShowCheckedModeBanner: false,
 
-      home: 
+      home: MyWidget(),   
+ 
     );
   }
 
@@ -28,16 +33,8 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("MyApp", style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.lightBlue,
-            fontSize: 25,
-          ),
-          ),
-          centerTitle: true,
-         ),
-      );
+        
+         );
 
   }
 }
