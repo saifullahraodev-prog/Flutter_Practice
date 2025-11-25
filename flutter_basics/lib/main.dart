@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_basics/screens/splash/splashscreen.dart';
 
 void main(){
 runApp(MyApp());
@@ -12,13 +13,13 @@ class MyApp extends StatelessWidget{
    @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:'My App',
+      title:'Instagram',
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
       debugShowCheckedModeBanner: false,
 
-      home: MyWidget(),   
+      home: Splashscreen(),   
  
     );
   }
@@ -27,14 +28,3 @@ class MyApp extends StatelessWidget{
 }
 
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        
-         );
-
-  }
-}
